@@ -1,0 +1,34 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="rpc-hessian-server:war exploded">
+    <output-path>$PROJECT_DIR$/rpc-hessian-server/target/rpc-hessian-server</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>rpc-hessian-server</module>
+        <packaging>war</packaging>
+        <unpackNestedArchives>false</unpackNestedArchives>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="rpc-hessian-server" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="archive" name="rpc-hessian-api-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="rpc-hessian-api" />
+          </element>
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.32" />
+          <element id="library" level="project" name="Maven: ch.qos.logback:logback-classic:1.2.9" />
+          <element id="library" level="project" name="Maven: ch.qos.logback:logback-core:1.2.9" />
+          <element id="library" level="project" name="Maven: org.projectlombok:lombok:1.18.24" />
+          <element id="library" level="project" name="Maven: com.caucho:hessian:4.0.38" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/rpc-hessian-server/target/rpc-hessian-server/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="rpc-hessian-server/web/Web" />
+    </root>
+  </artifact>
+</component>

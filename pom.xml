@@ -8,6 +8,11 @@
     <artifactId>Study-RPC</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>rpc-hessian-api</module>
+        <module>rpc-hessian-client</module>
+        <module>rpc-hessian-server</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
