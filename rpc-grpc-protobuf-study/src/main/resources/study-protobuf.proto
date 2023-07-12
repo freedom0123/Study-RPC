@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+// 单行注释
+
+/**
+* 多行注释
+ */
+
+// 与 Java 开发相关
+option java_multiple_files = false;
+
+option java_package = "com.haolong";
+
+option java_outer_classname = "HelloProto";
+
+message LoginReq {
+  repeated string username = 1;
+  string password = 2;
+}
+
+enum sex {
+  man = 0;
+  woman = 1;
+}
+
+message User {
+  oneof sex {
+    string man = 1;
+    string woman = 2;
+  }
+}

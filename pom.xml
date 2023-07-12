@@ -12,6 +12,7 @@
         <module>rpc-hessian-api</module>
         <module>rpc-hessian-client</module>
         <module>rpc-hessian-server</module>
+        <module>rpc-grpc-protobuf-study</module>
     </modules>
 
     <properties>
@@ -24,7 +25,7 @@
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.13.1</version>
-            <scope>test</scope>
+            <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>javax.servlet</groupId>

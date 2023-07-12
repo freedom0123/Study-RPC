@@ -7,6 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="rpc-grpc-protobuf-study" />
         <module name="rpc-hessian-api" />
         <module name="rpc-hessian-client" />
         <module name="rpc-hessian-server" />
